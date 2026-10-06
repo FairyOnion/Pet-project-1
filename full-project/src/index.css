@@ -1,0 +1,28 @@
+*,
+::before,
+::after {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --main: #344343;
+    --secondary: #444;
+    --tertiary: red;
+    --headers: #567890;
+    --bg: #aaa;
+    --bg-secondary: #ddd;
+    --bg-extra: #555;
+    --nav-buttons: #444;
+    --nav-buttons-active: #232323;
+    --nav-buttons-hover: #989898;
+}
+
+[data-theme='light']{
+    --tertiary: yellowgreen;
+}
+
+body {
+    background-color: var(--bg);
+}

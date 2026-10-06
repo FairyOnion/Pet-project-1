@@ -1,0 +1,20 @@
+@import url('index.css');
+
+#test-zone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    width: 85vw;
+    margin: 5vh auto;
+    border: 10px solid var(--tertiary);
+}
+
+p {
+    color: var(--main)
+}
+
+.nav-button {
+    color: blue;
+}
