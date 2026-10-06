@@ -20,8 +20,10 @@ function App() {
   return (
     <>
       <div id='test-zone'>
+        <h1>This is a header</h1>
         <p>The first P element</p>
-        <p>Button have been clicked {count} times.</p>
+        <p>Buttons have been clicked {count} times.</p>
+        < Button/>
         < Button/>
       </div>
     </>

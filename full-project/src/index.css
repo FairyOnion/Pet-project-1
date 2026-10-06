@@ -7,16 +7,18 @@
 }
 
 :root {
-    --main: #344343;
-    --secondary: #444;
-    --tertiary: red;
-    --headers: #567890;
-    --bg: #aaa;
-    --bg-secondary: #ddd;
-    --bg-extra: #555;
-    --nav-buttons: #444;
-    --nav-buttons-active: #232323;
-    --nav-buttons-hover: #989898;
+    --main: #f3f3f3;
+    --secondary: #d2d2d2;
+    --tertiary: #c2c2c2;
+    --headers: rgb(100, 130, 200);
+    --bg: #1a1a1a;
+    --bg-secondary: #3a3a3a;
+    --bg-extra: #4d4d4d;
+    --border-main: rgb(30, 200, 255);
+    --nav-buttons: rgb(0, 50, 200);
+    --nav-buttons-active: rgb(0, 50, 170);
+    --nav-buttons-hover: rgb(25, 75, 225);
+    --nav-buttons-text: #c3c3c3;
 }
 
 [data-theme='light']{

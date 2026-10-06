@@ -8,7 +8,12 @@
     gap: 3vh;
     width: 85vw;
     margin: 5vh auto;
-    border: 10px solid var(--tertiary);
+    padding: 10px;
+    border: 4px solid var(--border-main);
+}
+
+h1 {
+    color: var(--headers)
 }
 
 p {
@@ -16,5 +21,18 @@ p {
 }
 
 .nav-button {
-    color: blue;
+    display: block;
+    padding: 15px;
+    border: 2px solid var(--border-main);
+    border-radius: 15px;
+    background-color: var(--nav-buttons);
+    color: var(--nav-buttons-text);
+}
+
+.nav-button:hover {
+    background-color: var(--nav-buttons-hover);
+}
+
+.nav-button:active {
+    background-color: var(--nav-buttons-active)
 }
