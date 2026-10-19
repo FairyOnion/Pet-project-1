@@ -13,23 +13,37 @@
 }
 
 h1 {
+    font-size: clamp(2rem, 4vw + 1.5rem, 4rem);
     color: var(--headers)
 }
 
 p {
+    font-size: clamp(1rem, 4vw + 1rem, 1.5rem);
     color: var(--main)
 }
 
-.nav-button {
+.test-button {
     display: block;
     padding: 15px;
-    border: 2px solid var(--border-main);
+    border: 3px solid var(--border-extra);
     border-radius: 15px;
+    background-color: var(--test-buttons);
+    color: var(--test-buttons-text);
+}
+
+.test-button:hover {
+    cursor: pointer;
+}
+
+.nav-button {
+    padding: 20px;
+    border: 1px solid var(--border-main);
     background-color: var(--nav-buttons);
-    color: var(--nav-buttons-text);
+    color: var(--nav-buttons-text)
 }
 
 .nav-button:hover {
+    cursor: pointer;
     background-color: var(--nav-buttons-hover);
 }
 

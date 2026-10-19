@@ -15,10 +15,13 @@
     --bg-secondary: #3a3a3a;
     --bg-extra: #4d4d4d;
     --border-main: rgb(30, 200, 255);
+    --border-extra: rgb(10, 100, 100);
+    --test-buttons: rgb(0, 200, 200);
+    --test-buttons-text: #292929;
     --nav-buttons: rgb(0, 50, 200);
     --nav-buttons-active: rgb(0, 50, 170);
     --nav-buttons-hover: rgb(25, 75, 225);
-    --nav-buttons-text: #c3c3c3;
+    --nav-buttons-text: #b6b6b6;
 }
 
 [data-theme='light']{
