@@ -1,0 +1,67 @@
+@import url('./src/index.css');
+
+.nav-button {
+    padding: 20px;
+    border: 1px solid var(--border-main);
+    background-color: var(--nav-buttons);
+    color: var(--nav-buttons-text);
+    font-size: 1.25em;
+    width: calc(100% / 4);
+    height: 100%;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    background-color: var(--nav-buttons-hover);
+}
+
+.nav-button:active {
+    background-color: var(--nav-buttons-active)
+}
+
+#main-nav {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 12vh;
+}
+
+#navigation-ul {
+    border: 3px solid var(--border-extra);
+    border-radius:3px;
+    padding: 15px;
+    background-color: var(--bg-secondary);
+    color: var(--secondary);
+    list-style-type: none;
+    left: 5vw;
+    width: 15%;
+    height: 30vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+    font-size: clamp(1rem, 2vw + 1rem ,1.25rem);
+    overflow: auto;
+}
+
+.close-popup-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15%;
+    height: 15%;
+    color: var(--tertiary);
+    background-color: var(--bg-extra);
+    border: 1px solid var(--tertiary);
+}
+
+.close-popup-btn:hover {
+    background-color: var(--bg-secondary);
+}
+
+.close-popup-btn:active {
+    background-color: var(--bg);
+}

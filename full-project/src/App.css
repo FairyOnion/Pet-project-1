@@ -22,7 +22,7 @@ p {
     color: var(--main)
 }
 
-.test-button {
+.count-button {
     display: block;
     padding: 15px;
     border: 3px solid var(--border-extra);
@@ -31,22 +31,6 @@ p {
     color: var(--test-buttons-text);
 }
 
-.test-button:hover {
+.count-button:hover {
     cursor: pointer;
-}
-
-.nav-button {
-    padding: 20px;
-    border: 1px solid var(--border-main);
-    background-color: var(--nav-buttons);
-    color: var(--nav-buttons-text)
-}
-
-.nav-button:hover {
-    cursor: pointer;
-    background-color: var(--nav-buttons-hover);
-}
-
-.nav-button:active {
-    background-color: var(--nav-buttons-active)
 }

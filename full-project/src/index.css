@@ -7,21 +7,21 @@
 }
 
 :root {
-    --main: #f3f3f3;
-    --secondary: #d2d2d2;
+    --main: #e4e4e4;
+    --secondary: #d3d3d3;
     --tertiary: #c2c2c2;
     --headers: rgb(100, 130, 200);
     --bg: #1a1a1a;
     --bg-secondary: #3a3a3a;
-    --bg-extra: #4d4d4d;
+    --bg-extra: #5a5a5a;
     --border-main: rgb(30, 200, 255);
-    --border-extra: rgb(10, 100, 100);
+    --border-extra: rgb(10, 100, 150);
     --test-buttons: rgb(0, 200, 200);
     --test-buttons-text: #292929;
-    --nav-buttons: rgb(0, 50, 200);
-    --nav-buttons-active: rgb(0, 50, 170);
-    --nav-buttons-hover: rgb(25, 75, 225);
-    --nav-buttons-text: #b6b6b6;
+    --nav-buttons: rgb(0, 50, 150);
+    --nav-buttons-active: rgb(0, 50, 135);
+    --nav-buttons-hover: rgb(10, 60, 160);
+    --nav-buttons-text: #bebebe;
 }
 
 [data-theme='light']{

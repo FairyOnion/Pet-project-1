@@ -1,0 +1,25 @@
+@import url('./src/index.css');
+
+.test-button {
+    background-color: var(--test-buttons);
+    color: var(--test-buttons-text);
+    border: 2px solid var(--border-extra);
+    border-radius: 5px;
+    width: 20%;
+    padding: 10px; 
+}
+
+#gav {
+    color: var(--headers);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+.divider {
+    width: 98%;
+    height: 1vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-top: 2px solid var(--tertiary);
+    border-bottom: 2px solid var(--tertiary);
+}
