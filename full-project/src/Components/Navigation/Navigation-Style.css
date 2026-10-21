@@ -1,4 +1,4 @@
-@import url('./src/index.css');
+@import url('/src/index.css');
 
 .nav-button {
     padding: 20px;
@@ -27,32 +27,54 @@
     height: 12vh;
 }
 
-#navigation-ul {
+#navigation-ul, #themes-ul {
     border: 3px solid var(--border-extra);
     border-radius:3px;
     padding: 15px;
     background-color: var(--bg-secondary);
     color: var(--secondary);
     list-style-type: none;
-    left: 5vw;
-    width: 15%;
-    height: 30vh;
+    width: 19%;
+    max-height: 60vh;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
     text-align: left;
     font-size: clamp(1rem, 2vw + 1rem ,1.25rem);
     overflow: auto;
 }
 
+#navigation-ul {
+    left: 3vw;
+    align-items: flex-start;
+}
+
+#themes-ul {
+    right: 3vw;
+}
+
+#navigation-ul > li:first-of-type, #themes-ul > li:first-of-type {
+    margin-top: 10%;
+}
+
+#themes-ul > li {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+#themes-ul > li:hover {
+    background-color: var(--bg-extra);
+    cursor: pointer;
+}
+
 .close-popup-btn {
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 15%;
-    height: 15%;
+    right: 0px;
+    top: 0px;
+    aspect-ratio: 1 / 1;
+    width: 10%;
     color: var(--tertiary);
     background-color: var(--bg-extra);
     border: 1px solid var(--tertiary);

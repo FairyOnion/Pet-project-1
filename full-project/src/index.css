@@ -6,14 +6,14 @@
   box-sizing: border-box;
 }
 
-:root {
+:root, [data-theme='dark'] {
     --main: #e4e4e4;
     --secondary: #d3d3d3;
     --tertiary: #c2c2c2;
-    --headers: rgb(100, 130, 200);
     --bg: #1a1a1a;
     --bg-secondary: #3a3a3a;
     --bg-extra: #5a5a5a;
+    --headers: rgb(100, 130, 200);
     --border-main: rgb(30, 200, 255);
     --border-extra: rgb(10, 100, 150);
     --test-buttons: rgb(0, 200, 200);
@@ -25,7 +25,39 @@
 }
 
 [data-theme='light']{
-    --tertiary: yellowgreen;
+    --main: #1a1a1a;
+    --secondary: #323232;
+    --tertiary: #4e4e4e;
+    --bg: #e5e5e5;
+    --bg-secondary: #d2d2d2;
+    --bg-extra: #bdbdbd;
+    --headers: rgb(90, 0, 90);
+    --border-main: rgb(80, 50 ,120);
+    --border-extra: rgb(120, 50, 80);
+    --test-buttons: rgb(220, 190, 30);
+    --test-buttons-text: #515151;
+    --nav-buttons: rgb(200, 0, 150);
+    --nav-buttons-active: rgb(185, 0, 135);
+    --nav-buttons-hover: rgb(210, 0, 160);
+    --nav-buttons-text: #222;
+}
+
+[data-theme='autumn']{
+    --main: rgb(230, 230, 170);
+    --secondary: rgb(220, 220, 165);
+    --tertiary: rgb(200, 200, 160);
+    --bg: rgb(70, 0, 0);
+    --bg-secondary: rgb(105, 20, 0);
+    --bg-extra: rgb(125, 30, 20);
+    --headers: rgb(255, 80, 0);
+    --border-main: rgb(230, 100, 0);
+    --border-extra: rgb(220, 135, 0);
+    --test-buttons: rgb(110, 110, 0);
+    --test-buttons-text: rgb(250, 250, 200);
+    --nav-buttons: rgb(70, 50, 30);
+    --nav-buttons-active: rgb(60, 40, 20);
+    --nav-buttons-hover: rgb(80, 60, 40);
+    --nav-buttons-text: rgb(210, 210, 150);
 }
 
 body {

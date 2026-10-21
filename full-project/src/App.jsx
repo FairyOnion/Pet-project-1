@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button, Gav, Divider }  from './Components/Small-Components/Small-Components.jsx'
+import { Button, Gav, ThickDivider, ThinDivider }  from './Components/Small-Components/Small-Components.jsx'
 import MainNavbar from './Components/Navigation/Navigation.jsx'
 import './App.css'
 
@@ -19,7 +19,7 @@ function App() {
         <p>Buttons have been clicked <u>{btnCount}</u> times.</p>
         <button className='count-button' onClick={handleCountClick}>Test Button</button>
         <button className='count-button' onClick={handleCountClick}>Test Button</button>
-        <Divider />
+        <ThickDivider />
         <Button name='first' />
         <Button name='second' />
         <Gav />

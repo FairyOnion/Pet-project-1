@@ -1,4 +1,4 @@
-@import url('./src/index.css');
+@import url('/src/index.css');
 
 .test-button {
     background-color: var(--test-buttons);
@@ -15,11 +15,19 @@
     font-size: 2rem;
 }
 
-.divider {
+.thick-divider {
     width: 98%;
     height: 1vh;
     margin-top: 2vh;
     margin-bottom: 2vh;
     border-top: 2px solid var(--tertiary);
     border-bottom: 2px solid var(--tertiary);
+}
+
+.thin-divider {
+    width: 98%;
+    height: 1vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-top: 1px solid var(--tertiary)
 }

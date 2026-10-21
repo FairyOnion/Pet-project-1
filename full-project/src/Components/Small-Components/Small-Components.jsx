@@ -16,6 +16,10 @@ export function Gav() {
     )
 }
 
-export function Divider() {
-  return <div className='divider'></div>
+export function ThickDivider() {
+  return <div className='thick-divider'></div>
+}
+
+export function ThinDivider() {
+  return <div className='thin-divider'></div>
 }
