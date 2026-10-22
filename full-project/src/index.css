@@ -6,7 +6,11 @@
   box-sizing: border-box;
 }
 
-:root, [data-theme='dark'] {
+body {
+    background-color: var(--bg);
+}
+
+:root, [data-theme='Dark'] {
     --main: #e4e4e4;
     --secondary: #d3d3d3;
     --tertiary: #c2c2c2;
@@ -24,13 +28,13 @@
     --nav-buttons-text: #bebebe;
 }
 
-[data-theme='light']{
+[data-theme='Light']{
     --main: #1a1a1a;
     --secondary: #323232;
     --tertiary: #4e4e4e;
-    --bg: #e5e5e5;
-    --bg-secondary: #d2d2d2;
-    --bg-extra: #bdbdbd;
+    --bg: #e9e9e9;
+    --bg-secondary: #dbdbdb;
+    --bg-extra: #cdcdcd;
     --headers: rgb(90, 0, 90);
     --border-main: rgb(80, 50 ,120);
     --border-extra: rgb(120, 50, 80);
@@ -42,7 +46,43 @@
     --nav-buttons-text: #222;
 }
 
-[data-theme='autumn']{
+[data-theme='Winter']{
+    --main: #181863;
+    --secondary: #212181;
+    --tertiary: #21219d;
+    --bg: rgb(220, 220, 250);
+    --bg-secondary: rgb(205, 205, 235);
+    --bg-extra: rgb(190, 190, 220);
+    --headers: rgb(65, 65, 185);
+    --border-main: rgb(100 , 160 , 180);
+    --border-extra: rgb(50, 170, 150);
+    --test-buttons: rgb(20, 100, 125);
+    --test-buttons-text: rgb(230, 230, 255);
+    --nav-buttons: rgb(165, 185, 240);
+    --nav-buttons-active: rgb(150, 170, 225);
+    --nav-buttons-hover: rgb(180, 200, 255);
+    --nav-buttons-text: rgb(40, 40, 120);
+}
+
+[data-theme='Spring']{
+    --main: rgb(10, 80, 25);
+    --secondary: rgb(30, 110, 55);
+    --tertiary: rgb(40, 120, 65);
+    --bg: #f2f2cf;
+    --bg-secondary: #efefbd;
+    --bg-extra: #dedeb6;
+    --headers: rgb(215, 105, 175);
+    --border-main: rgb(240, 180, 220);
+    --border-extra: rgb(250, 130, 190);
+    --test-buttons: rgb(30, 100, 30);
+    --test-buttons-text: rgb(250, 250, 200);
+    --nav-buttons: rgb(90, 165, 105);
+    --nav-buttons-active: rgb(75, 150, 90);
+    --nav-buttons-hover: rgb(100, 175, 115);
+    --nav-buttons-text: rgb(20, 65, 20);
+}
+
+[data-theme='Autumn']{
     --main: rgb(230, 230, 170);
     --secondary: rgb(220, 220, 165);
     --tertiary: rgb(200, 200, 160);
@@ -58,8 +98,4 @@
     --nav-buttons-active: rgb(60, 40, 20);
     --nav-buttons-hover: rgb(80, 60, 40);
     --nav-buttons-text: rgb(210, 210, 150);
-}
-
-body {
-    background-color: var(--bg);
 }
