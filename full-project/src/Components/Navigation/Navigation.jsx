@@ -1,10 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
 import './Navigation-Style.css'
 import { ThinDivider } from '../Small-Components/Small-Components.jsx'
 
 export default function MainNavbar () {
 
-    const [currentTheme, setCurrentTheme] = useState('dark');
+    const themes = ['Dark', 'Light', 'Winter', 'Spring', 'Summer', 'Autumn'];
+    const navigationLinks = ['test link 1', 'test link 2', 'test link 3', 'test link 4']
+    const [currentTheme, setCurrentTheme] = useState('Dark');
     const [isNavigationListVisible, setIsNavigationListVisible] = useState(false);
     const [isThemesListVisible, setIsThemesListVisible] = useState(false);
 
@@ -31,13 +33,14 @@ export default function MainNavbar () {
         {isNavigationListVisible && (
           <ul aria-label='Navigation links' id='navigation-ul'>
             <button className='close-popup-btn' onClick={handleClosePopup}>&#10006;</button>
-            <li className='navigation-li'>Test Link 1</li>
-            <ThinDivider />
-            <li className='navigation-li'>Test Link 2</li>
-            <ThinDivider />
-            <li className='navigation-li'>Test Link 3</li>
-            <ThinDivider />
-            <li className='navigation-li'>Test Link 4</li>
+            {navigationLinks.map((link) => {
+              return (
+                <Fragment key={link}>
+                  <li className='navigation-li'>{link}</li>
+                  <ThinDivider />
+                </Fragment>
+              )
+            })}
           </ul>
         )}
         <button className='nav-button'>Function 2</button>
@@ -46,11 +49,14 @@ export default function MainNavbar () {
         {isThemesListVisible && (
           <ul aria-label='Themes select' id='themes-ul'>
             <button className='close-popup-btn' onClick={handleClosePopup}>&#10006;</button>
-            <li className='theme-li' id='dark' key='dark' onClick={(e) => setCurrentTheme('dark')}>Dark</li>
-            <ThinDivider />
-            <li className='theme-li' id='light' key='light' onClick={(e) => setCurrentTheme('light')}>Light</li>
-            <ThinDivider />
-            <li className='theme-li' id='autumn' key='autumn' onClick={(e) => setCurrentTheme('autumn')}>Autumn</li>
+            {themes.map((theme) => {
+              return (
+                <Fragment key={theme}>
+                  <li className='theme-li' id={theme.toLowerCase()} onClick={() => {setCurrentTheme(theme)}}>{theme}</li>
+                  <ThinDivider />
+                </Fragment>
+              )
+            })}
           </ul>
         )}
     </nav>

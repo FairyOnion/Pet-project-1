@@ -5,8 +5,11 @@
     color: var(--test-buttons-text);
     border: 2px solid var(--border-extra);
     border-radius: 5px;
-    width: 20%;
-    padding: 10px; 
+    min-height: 10%;
+    min-width: 20%;
+    max-width: 90%;
+    padding: 10px;
+    font-size: 16px;
 }
 
 #gav {
@@ -30,4 +33,8 @@
     margin-top: 2vh;
     margin-bottom: 2vh;
     border-top: 1px solid var(--tertiary)
+}
+
+li + .thin-divider:last-of-type {
+    display: none;
 }

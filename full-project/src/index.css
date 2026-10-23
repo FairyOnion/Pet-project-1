@@ -10,6 +10,22 @@ body {
     background-color: var(--bg);
 }
 
+#main-area {
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 
+    "buttons buttons buttons test test test"
+    "zone1 zone1 zone2 zone2 zone3 zone3"
+    ;
+    gap: 14px;
+}
+
+#buttons-zone {grid-area: buttons;}
+#test-zone {grid-area: test;}
+#zone1 {grid-area: zone1;}
+#zone2 {grid-area: zone2;}
+#zone3 {grid-area: zone3}
+
 :root, [data-theme='Dark'] {
     --main: #e4e4e4;
     --secondary: #d3d3d3;
@@ -80,6 +96,24 @@ body {
     --nav-buttons-active: rgb(75, 150, 90);
     --nav-buttons-hover: rgb(100, 175, 115);
     --nav-buttons-text: rgb(20, 65, 20);
+}
+
+[data-theme='Summer']{
+    --main: rgb(230, 230, 130);
+    --secondary: rgb(220, 220, 135);
+    --tertiary: rgb(200, 200, 120);
+    --bg: rgb(0, 95, 25);
+    --bg-secondary: rgb(0, 75, 25);
+    --bg-extra: rgb(0, 55, 25);
+    --headers: rgb(0, 150, 150);
+    --border-main: rgb(0, 160, 130);
+    --border-extra: rgb(0, 130, 160);
+    --test-buttons: rgb(240, 160, 10);
+    --test-buttons-text: rgb(0, 90, 45);
+    --nav-buttons: rgb(180, 180, 0);
+    --nav-buttons-active: rgb(165, 165, 0);
+    --nav-buttons-hover: rgb(195, 195, 0);
+    --nav-buttons-text: rgb(0, 15, 125);
 }
 
 [data-theme='Autumn']{
