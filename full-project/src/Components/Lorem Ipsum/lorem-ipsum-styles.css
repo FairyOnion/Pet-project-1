@@ -1,0 +1,7 @@
+@import url('/src/index.css');
+
+.lorem-paragraph {
+    color: var(--main);
+    margin: 1vh auto;
+    font-family: monospace, Arial, sans-serif;
+}

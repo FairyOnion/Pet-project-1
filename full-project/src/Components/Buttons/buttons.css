@@ -1,0 +1,74 @@
+@import url('/src/index.css');
+
+#buttons-zone {
+    justify-content: center;
+    align-items: center;
+}
+
+#count-buttons-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 40vh;
+    max-height: 80vh;
+    padding: 8px;
+}
+
+#count-buttons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    height: 95%;
+    padding: 3px;
+    gap: 1vh;
+}
+
+#count-description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    height: 95%;
+    padding: 3px;
+    gap: 1vh;
+}
+
+.count-button {
+    padding: 15px;
+    border-radius: 15px;
+    width: 90%;
+    color: #2e2e2e;
+    font-size: 16px;
+    transform: scale(0.95);
+    transition: all 0.2s ease-in-out;
+}
+
+.count-button:hover {
+    cursor: pointer;
+    transform: scale(1);
+}
+
+#red-btn {
+    background-color: #b33;
+    border: 3px solid #f11;
+}
+
+#green-btn {
+    background-color: #3b3;
+    border: 3px solid #1f1;
+}
+
+#blue-btn {
+    background-color: #55d;
+    border: 3px solid #11f;
+}
+
+#purple-btn {
+    background-color: #b3b;
+    border: 3px solid #f1f;
+}

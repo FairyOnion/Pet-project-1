@@ -5,7 +5,12 @@ import { ThinDivider } from '../Small-Components/Small-Components.jsx'
 export default function MainNavbar () {
 
     const themes = ['Dark', 'Light', 'Winter', 'Spring', 'Summer', 'Autumn'];
-    const navigationLinks = ['test link 1', 'test link 2', 'test link 3', 'test link 4']
+    const navigationLinks = [
+      {name: 'Home', link: '#test-zone'},
+      {name: 'Second Row', link: '#weather-container'},
+      {name: 'Third Row', link: '#weather-container'},
+      {name: 'Fourth Row', link: '#weather-container'}
+    ]
     const [currentTheme, setCurrentTheme] = useState('Dark');
     const [isNavigationListVisible, setIsNavigationListVisible] = useState(false);
     const [isThemesListVisible, setIsThemesListVisible] = useState(false);
@@ -33,10 +38,10 @@ export default function MainNavbar () {
         {isNavigationListVisible && (
           <ul aria-label='Navigation links' id='navigation-ul'>
             <button className='close-popup-btn' onClick={handleClosePopup}>&#10006;</button>
-            {navigationLinks.map((link) => {
+            {navigationLinks.map((el) => {
               return (
-                <Fragment key={link}>
-                  <li className='navigation-li'>{link}</li>
+                <Fragment key={el.name}>
+                  <li className='navigation-li'><a href={el.link}>{el.name}</a></li>
                   <ThinDivider />
                 </Fragment>
               )

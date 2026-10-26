@@ -59,9 +59,26 @@
     margin-top: 10%;
 }
 
+#navigation-ul > li {
+    width: 100%;
+    padding: 7px;
+}
+
+#navigation-ul > li:hover {
+    background-color: var(--bg-extra);
+}
+
+#navigation-ul > li > a {
+    color: var(--secondary);
+}
+
+#navigation-ul > li > a:active {
+    color: var(--main);
+}
+
 #themes-ul > li {
     width: 100%;
-    padding: 8px;
+    padding: 7px;
     text-align: center;
 }
 

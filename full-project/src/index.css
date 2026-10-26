@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 16vh; 
+}
+
 body {
     background-color: var(--bg);
 }
@@ -14,16 +19,16 @@ body {
     padding: 10px;
     display: grid;
     grid-template-areas: 
-    "buttons buttons buttons test test test"
-    "zone1 zone1 zone2 zone2 zone3 zone3"
+    "test test test buttons buttons buttons"
+    "weather weather lorem lorem zone3 zone3"
     ;
     gap: 14px;
 }
 
-#buttons-zone {grid-area: buttons;}
 #test-zone {grid-area: test;}
-#zone1 {grid-area: zone1;}
-#zone2 {grid-area: zone2;}
+#buttons-zone {grid-area: buttons;}
+#weather-container {grid-area: weather;}
+#lorem-zone {grid-area: lorem;}
 #zone3 {grid-area: zone3}
 
 :root, [data-theme='Dark'] {
