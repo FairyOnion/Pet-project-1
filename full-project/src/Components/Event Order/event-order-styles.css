@@ -1,0 +1,6 @@
+@import url('/src/index.css');
+
+.something-p {
+    background-color: goldenrod;
+    padding: 15px;
+}

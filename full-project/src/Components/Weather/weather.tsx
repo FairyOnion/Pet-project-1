@@ -1,10 +1,10 @@
 import './weather-style.css'
-import { useState, useEffect } from "react";
+//import { useState, useEffect } from "react";
 
 export default function WeatherApp () {
 
-    const [data, setData] = useState(null);
-    const [errorMsg, setErrorMsg] = useState(null);
+    //const [data, setData] = useState(null);
+    //const [errorMsg, setErrorMsg] = useState(null);
 
     return (
         <div id='weather-container'>

@@ -20,7 +20,7 @@ body {
     display: grid;
     grid-template-areas: 
     "test test test buttons buttons buttons"
-    "weather weather lorem lorem zone3 zone3"
+    "weather weather lorem lorem event event"
     ;
     gap: 14px;
 }
@@ -29,7 +29,7 @@ body {
 #buttons-zone {grid-area: buttons;}
 #weather-container {grid-area: weather;}
 #lorem-zone {grid-area: lorem;}
-#zone3 {grid-area: zone3}
+#event-zone {grid-area: event;}
 
 :root, [data-theme='Dark'] {
     --main: #e4e4e4;

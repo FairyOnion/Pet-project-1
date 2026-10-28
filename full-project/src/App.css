@@ -24,7 +24,7 @@ p {
     color: var(--main)
 }
 
-#weather-container, #lorem-zone, #zone3 {
+#weather-container, #lorem-zone, #event-zone {
     border: 5px solid var(--border-main);
     padding: 10px;
     margin: 14px;

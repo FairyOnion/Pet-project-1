@@ -1,11 +1,16 @@
 import { useState, useEffect, Fragment } from 'react';
 import './Navigation-Style.css'
-import { ThinDivider } from '../Small-Components/Small-Components.jsx'
+import { ThinDivider } from '../Small-Components/Small-Components.tsx'
+
+interface NavigationLink {
+  name: string,
+  link: string
+}
 
 export default function MainNavbar () {
 
-    const themes = ['Dark', 'Light', 'Winter', 'Spring', 'Summer', 'Autumn'];
-    const navigationLinks = [
+    const themes: string[] = ['Dark', 'Light', 'Winter', 'Spring', 'Summer', 'Autumn'];
+    const navigationLinks: NavigationLink[] = [
       {name: 'Home', link: '#test-zone'},
       {name: 'Second Row', link: '#weather-container'},
       {name: 'Third Row', link: '#weather-container'},
