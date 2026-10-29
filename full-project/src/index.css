@@ -20,7 +20,8 @@ body {
     display: grid;
     grid-template-areas: 
     "test test test buttons buttons buttons"
-    "weather weather lorem lorem event event"
+    "weather weather time time event event"
+    "lorem lorem lorem lorem lorem lorem"
     ;
     gap: 14px;
 }
@@ -28,8 +29,9 @@ body {
 #test-zone {grid-area: test;}
 #buttons-zone {grid-area: buttons;}
 #weather-container {grid-area: weather;}
-#lorem-zone {grid-area: lorem;}
+#time-zone {grid-area: time;}
 #event-zone {grid-area: event;}
+#lorem-zone {grid-area: lorem;}
 
 :root, [data-theme='Dark'] {
     --main: #e4e4e4;
@@ -41,8 +43,9 @@ body {
     --headers: rgb(100, 130, 200);
     --border-main: rgb(30, 200, 255);
     --border-extra: rgb(10, 100, 150);
-    --test-buttons: rgb(0, 200, 200);
-    --test-buttons-text: #292929;
+    --buttons-bg: rgb(0, 200, 200);
+    --buttons-bg-hover: rgb(0,180,180);
+    --buttons-text: #292929;
     --nav-buttons: rgb(0, 50, 150);
     --nav-buttons-active: rgb(0, 50, 135);
     --nav-buttons-hover: rgb(10, 60, 160);
@@ -59,8 +62,9 @@ body {
     --headers: rgb(90, 0, 90);
     --border-main: rgb(80, 50 ,120);
     --border-extra: rgb(120, 50, 80);
-    --test-buttons: rgb(220, 190, 30);
-    --test-buttons-text: #515151;
+    --buttons-bg: rgb(220, 190, 30);
+    --buttons-bg-hover: rgb(200, 170, 10);
+    --buttons-text: #515151;
     --nav-buttons: rgb(200, 0, 150);
     --nav-buttons-active: rgb(185, 0, 135);
     --nav-buttons-hover: rgb(210, 0, 160);
@@ -77,8 +81,9 @@ body {
     --headers: rgb(65, 65, 185);
     --border-main: rgb(100 , 160 , 180);
     --border-extra: rgb(50, 170, 150);
-    --test-buttons: rgb(20, 100, 125);
-    --test-buttons-text: rgb(230, 230, 255);
+    --buttons-bg: rgb(20, 100, 125);
+    --buttons-bg-hover: rgb(40, 120, 145);
+    --buttons-text: rgb(230, 230, 255);
     --nav-buttons: rgb(165, 185, 240);
     --nav-buttons-active: rgb(150, 170, 225);
     --nav-buttons-hover: rgb(180, 200, 255);
@@ -95,8 +100,9 @@ body {
     --headers: rgb(215, 105, 175);
     --border-main: rgb(240, 180, 220);
     --border-extra: rgb(250, 130, 190);
-    --test-buttons: rgb(30, 100, 30);
-    --test-buttons-text: rgb(250, 250, 200);
+    --buttons-bg: rgb(30, 100, 30);
+    --buttons-bg-hover: rgb(50, 120, 50);
+    --buttons-text: rgb(250, 250, 200);
     --nav-buttons: rgb(90, 165, 105);
     --nav-buttons-active: rgb(75, 150, 90);
     --nav-buttons-hover: rgb(100, 175, 115);
@@ -113,8 +119,9 @@ body {
     --headers: rgb(0, 150, 150);
     --border-main: rgb(0, 160, 130);
     --border-extra: rgb(0, 130, 160);
-    --test-buttons: rgb(240, 160, 10);
-    --test-buttons-text: rgb(0, 90, 45);
+    --buttons-bg: rgb(240, 160, 10);
+    --buttons-bg-hover: rgb(220, 140, 0);
+    --buttons-text: rgb(0, 90, 45);
     --nav-buttons: rgb(180, 180, 0);
     --nav-buttons-active: rgb(165, 165, 0);
     --nav-buttons-hover: rgb(195, 195, 0);
@@ -131,8 +138,9 @@ body {
     --headers: rgb(255, 80, 0);
     --border-main: rgb(230, 100, 0);
     --border-extra: rgb(220, 135, 0);
-    --test-buttons: rgb(110, 110, 0);
-    --test-buttons-text: rgb(250, 250, 200);
+    --buttons-bg: rgb(110, 110, 0);
+    --buttons-bg-hover: rgb(130, 130, 20);
+    --buttons-text: rgb(250, 250, 200);
     --nav-buttons: rgb(70, 50, 30);
     --nav-buttons-active: rgb(60, 40, 20);
     --nav-buttons-hover: rgb(80, 60, 40);

@@ -1,7 +1,30 @@
 @import url('/src/index.css');
 
+#lorem-zone {
+    border: 5px solid var(--border-main);
+    padding: 10px;
+    margin: 14px;
+    text-align: center;
+}
+
 .lorem-paragraph {
     color: var(--main);
     margin: 1vh auto;
     font-family: monospace, Arial, sans-serif;
+}
+
+#collapse-lorem {
+    width: 15%;
+    height: 5vh;
+    margin: 1vh auto;
+    color: var(--buttons-text);
+    background-color: var(--buttons-bg);
+    border: 2px solid var(--border-main);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#collapse-lorem:hover {
+    cursor: pointer;
+    background-color: var(--buttons-bg-hover);
 }

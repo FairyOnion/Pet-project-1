@@ -1,10 +1,10 @@
-//import { useState, useEffect } from 'react'
 import { Button, Gav, ThickDivider, ThinDivider}  from './Components/Small-Components/Small-Components.tsx'
 import MainNavbar from './Components/Navigation/Navigation.tsx'
 import ButtonsSet from './Components/Buttons/buttons.tsx'
 import WeatherApp from './Components/Weather/weather.tsx'
-import LoremIpsum from './Components/Lorem Ipsum/lorem-ipsum.tsx'
+import TimeCurrent from './Components/Time/time.tsx'
 import EventOrder from './Components/Event Order/event-order.tsx'
+import LoremIpsum from './Components/Lorem Ipsum/lorem-ipsum.tsx'
 import './App.css'
 
 function App() {
@@ -24,8 +24,9 @@ function App() {
         </div>
         <ButtonsSet />
         <WeatherApp />
-        <LoremIpsum />
+        <TimeCurrent />
         <EventOrder />
+        <LoremIpsum />
       </div>
     </main>
   )

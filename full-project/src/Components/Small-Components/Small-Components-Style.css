@@ -1,8 +1,8 @@
 @import url('/src/index.css');
 
 .test-button {
-    background-color: var(--test-buttons);
-    color: var(--test-buttons-text);
+    background-color: var(--buttons-bg);
+    color: var(--buttons-text);
     border: 2px solid var(--border-extra);
     border-radius: 5px;
     min-height: 10%;
@@ -10,6 +10,11 @@
     max-width: 90%;
     padding: 10px;
     font-size: 16px;
+}
+
+.test-button:hover {
+    cursor: pointer;
+    background-color: var(--buttons-bg-hover);
 }
 
 #gav {

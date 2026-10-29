@@ -13,8 +13,8 @@ export default function MainNavbar () {
     const navigationLinks: NavigationLink[] = [
       {name: 'Home', link: '#test-zone'},
       {name: 'Second Row', link: '#weather-container'},
-      {name: 'Third Row', link: '#weather-container'},
-      {name: 'Fourth Row', link: '#weather-container'}
+      {name: 'Third Row', link: '#lorem-zone'},
+      {name: 'Fourth Row', link: '#lorem-zone'}
     ]
     const [currentTheme, setCurrentTheme] = useState('Dark');
     const [isNavigationListVisible, setIsNavigationListVisible] = useState(false);
@@ -31,10 +31,12 @@ export default function MainNavbar () {
     
     function handleNavigationButton () {
       setIsNavigationListVisible(!isNavigationListVisible);
+      setIsThemesListVisible(false);
     }
 
     function handleThemesButton () {
       setIsThemesListVisible(!isThemesListVisible);
+      setIsNavigationListVisible(false);
     }
 
     return (
@@ -53,8 +55,6 @@ export default function MainNavbar () {
             })}
           </ul>
         )}
-        <button className='nav-button'>Function 2</button>
-        <button className='nav-button'>Function 3</button>
         <button className='nav-button' id='themes-list-btn' onClick={handleThemesButton}>Themes</button>
         {isThemesListVisible && (
           <ul aria-label='Themes select' id='themes-ul'>
@@ -69,6 +69,8 @@ export default function MainNavbar () {
             })}
           </ul>
         )}
+        <button className='nav-button'>Function 3</button>
+        <button className='nav-button'>Function 4</button>
     </nav>
     )
 }

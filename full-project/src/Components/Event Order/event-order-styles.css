@@ -1,6 +1,70 @@
 @import url('/src/index.css');
 
-.something-p {
-    background-color: goldenrod;
-    padding: 15px;
+#event-zone {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+#event-pre {
+    padding: 5px;
+    background-color: var(--bg-secondary);
+    border: 3px solid var(--border-extra);
+    border-radius: 3px;
+    max-width: 30vw;
+    overflow-x: auto;
+}
+
+#event-code-snippet {
+    color: var(--secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#run-code-btn {
+    padding: 5px;
+    background-color: var(--buttons-bg);
+    color: var(--buttons-text);
+    border: 2px solid var(--border-extra);
+    border-radius: 15px;
+    min-width: 40%;
+    max-width: 80%;
+    min-height: 3%;
+    max-height: 10%;
+    font-size: 1.125rem;
+}
+
+#run-code-btn:hover {
+    cursor: pointer;
+    background-color: var(--buttons-bg-hover);
+}
+
+.code-span {
+    color: var(-tertiary);
+    text-decoration: underline;
+}
+
+#open-explanation-text {
+    color: var(--secondary);
+    background-color: var(--bg-secondary);
+    border: 3px solid var(--border-main);
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#open-explanation-text:hover {
+    cursor: pointer;
+}
+
+#code-snippet-explanation {
+    background-color: var(--bg-extra);
+    color: var(--tertiary);
+    border: 3px solid var(--border-extra);
+    border-radius: 10px;
+    padding: 10px;
+    width: 85%;
+    font-family: Verdana, sans-serif;
+    text-align: center;
 }
