@@ -13,7 +13,13 @@ function App() {
     <main>
       <MainNavbar />
       <div id='main-area'>
-        <div id='test-zone'>
+        <WeatherApp />
+        <TimeCurrent />
+        <div id='random-num-zone' className='grid-tile-first-row'>
+          <h2>Random Number Generator</h2>
+          <p>A random number will be generated here</p>
+        </div>
+        <div id='test-zone' className="grid-tile-second-row">
           <h2>Test Zone</h2>
           <ThickDivider />
           <Button name="First" sec={45}/>
@@ -23,9 +29,10 @@ function App() {
           <Gav />
         </div>
         <ButtonsSet />
-        <WeatherApp />
-        <TimeCurrent />
         <EventOrder />
+        <div id='unknown-zone' className='grid-tile-third-row'>
+          <h2>Empty for now</h2>
+        </div>
         <LoremIpsum />
       </div>
     </main>

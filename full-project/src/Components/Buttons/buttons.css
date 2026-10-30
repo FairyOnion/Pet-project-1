@@ -1,6 +1,8 @@
 @import url('/src/index.css');
 
 #buttons-zone {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

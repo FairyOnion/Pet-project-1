@@ -21,8 +21,8 @@ export default function EventOrder() {
     }
 
     return (
-        <div id='event-zone'>
-            <h2>Event Order</h2>
+        <div id='event-zone' className='grid-tile-third-row'>
+            <h2 id='event-order-header'>Event Order</h2>
             <p id='code-label' className='something-p'>The code to be executed:</p>
             <pre id='event-pre'>
                 <code id='event-code-snippet'>

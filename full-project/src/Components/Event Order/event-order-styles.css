@@ -8,12 +8,17 @@
     gap: 2vh;
 }
 
+#event-order-header {
+    margin-bottom: auto;
+}
+
 #event-pre {
     padding: 5px;
     background-color: var(--bg-secondary);
     border: 3px solid var(--border-extra);
     border-radius: 3px;
-    max-width: 30vw;
+    min-width: 95%;
+    max-width: 99%;
     overflow-x: auto;
 }
 

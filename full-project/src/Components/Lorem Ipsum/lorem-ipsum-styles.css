@@ -1,12 +1,5 @@
 @import url('/src/index.css');
 
-#lorem-zone {
-    border: 5px solid var(--border-main);
-    padding: 10px;
-    margin: 14px;
-    text-align: center;
-}
-
 .lorem-paragraph {
     color: var(--main);
     margin: 1vh auto;

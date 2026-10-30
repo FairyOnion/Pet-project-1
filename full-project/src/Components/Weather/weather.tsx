@@ -7,10 +7,10 @@ export default function WeatherApp () {
     //const [errorMsg, setErrorMsg] = useState(null);
 
     return (
-        <div id='weather-container'>
+        <div id='weather-container' className='grid-tile-first-row'>
             <h1>Weather Forecast</h1>
-            <h3 id='weather-city'>Empty City</h3>
-            <h3 id='weather-main-condition'>The weather will be here</h3>
+            <p id='weather-city'>Empty City</p>
+            <p id='weather-main-condition'>The weather will be here</p>
         </div>
     )
 }

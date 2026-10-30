@@ -1,34 +1,60 @@
 @import url('index.css');
 
+#main-area {
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 
+    "weather weather time time random-num random-num"
+    "test test test buttons buttons buttons"
+    "event event event unknown unknown unknown"
+    "lorem lorem lorem lorem lorem lorem"
+    ;
+    gap: 14px;
+    justify-content: space-between;
+    align-content:space-between ;
+}
+
+#weather-container {grid-area: weather;}
+#time-zone {grid-area: time;}
+#random-num-zone {grid-area: random-num;}
+#test-zone {grid-area: test;}
+#buttons-zone {grid-area: buttons;}
+#event-zone {grid-area: event;}
+#unknown-zone {grid-area: unknown}
+#lorem-zone {grid-area: lorem;}
+
 #test-zone {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-h1, h2 {
-    font-size: clamp(1.5rem, 4vw + 1.5rem, 3.5rem);
-    color: var(--headers)
-}
-
-p {
-    font-size: clamp(1rem, 4vw + 1rem, 1.5rem);
-    color: var(--main)
-}
-
-#test-zone, #buttons-zone {
-    display: flex;
-    flex-direction: column;
-    gap: 3vh;
-    margin: 4vh 1vw;
-    padding: 15px;
+.grid-tile-first-row {
     border: 4px solid var(--border-main);
+    margin: 4vh 1vw;
+    padding: 10px;
+    width: 30vw;
+    text-align: center;
 }
 
-#weather-container, #time-zone, #event-zone {
-    border: 5px solid var(--border-main);
-    padding: 10px;
+.grid-tile-second-row {
+    border: 4px solid var(--border-main);
     margin: 14px;
+    padding: 10px;
     text-align: center;
-    min-width: 20vw;
-    max-width: 33vw;
+}
+
+.grid-tile-third-row {
+    border: 4px solid var(--border-main);
+    margin: 14px;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-tile-fourth-row {
+    border: 4px solid var(--border-main);
+    margin: 14px;
+    padding: 10px;
+    text-align: center;
 }

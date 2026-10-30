@@ -15,23 +15,20 @@ body {
     background-color: var(--bg);
 }
 
-#main-area {
-    padding: 10px;
-    display: grid;
-    grid-template-areas: 
-    "test test test buttons buttons buttons"
-    "weather weather time time event event"
-    "lorem lorem lorem lorem lorem lorem"
-    ;
-    gap: 14px;
+h1, h2 {
+    font-size: clamp(1.5rem, 4vw + 1.5rem, 3.5rem);
+    color: var(--headers)
 }
 
-#test-zone {grid-area: test;}
-#buttons-zone {grid-area: buttons;}
-#weather-container {grid-area: weather;}
-#time-zone {grid-area: time;}
-#event-zone {grid-area: event;}
-#lorem-zone {grid-area: lorem;}
+h3, h4 {
+    font-size: clamp(1.125rem, 4vw + 1rem, 2.5rem);
+    color: var(--headers-extra);
+}
+
+p {
+    font-size: clamp(1rem, 4vw + 1rem, 1.5rem);
+    color: var(--main)
+}
 
 :root, [data-theme='Dark'] {
     --main: #e4e4e4;
@@ -41,6 +38,7 @@ body {
     --bg-secondary: #3a3a3a;
     --bg-extra: #5a5a5a;
     --headers: rgb(100, 130, 200);
+    --headers-extra: rgb(80, 110, 180);
     --border-main: rgb(30, 200, 255);
     --border-extra: rgb(10, 100, 150);
     --buttons-bg: rgb(0, 200, 200);
@@ -60,6 +58,7 @@ body {
     --bg-secondary: #dbdbdb;
     --bg-extra: #cdcdcd;
     --headers: rgb(90, 0, 90);
+    --headers-extra: rgb(110, 10, 110);
     --border-main: rgb(80, 50 ,120);
     --border-extra: rgb(120, 50, 80);
     --buttons-bg: rgb(220, 190, 30);
@@ -79,6 +78,7 @@ body {
     --bg-secondary: rgb(205, 205, 235);
     --bg-extra: rgb(190, 190, 220);
     --headers: rgb(65, 65, 185);
+    --headers-extra: rgb(85, 85, 205);
     --border-main: rgb(100 , 160 , 180);
     --border-extra: rgb(50, 170, 150);
     --buttons-bg: rgb(20, 100, 125);
@@ -98,6 +98,7 @@ body {
     --bg-secondary: #efefbd;
     --bg-extra: #dedeb6;
     --headers: rgb(215, 105, 175);
+    --headers-extra: rgb(235, 125, 195);
     --border-main: rgb(240, 180, 220);
     --border-extra: rgb(250, 130, 190);
     --buttons-bg: rgb(30, 100, 30);
@@ -117,6 +118,7 @@ body {
     --bg-secondary: rgb(0, 75, 25);
     --bg-extra: rgb(0, 55, 25);
     --headers: rgb(0, 150, 150);
+    --headers-extra: rgb(0, 130, 130);
     --border-main: rgb(0, 160, 130);
     --border-extra: rgb(0, 130, 160);
     --buttons-bg: rgb(240, 160, 10);
@@ -136,6 +138,7 @@ body {
     --bg-secondary: rgb(105, 20, 0);
     --bg-extra: rgb(125, 30, 20);
     --headers: rgb(255, 80, 0);
+    --headers-extra: rgb(235, 60, 0);
     --border-main: rgb(230, 100, 0);
     --border-extra: rgb(220, 135, 0);
     --buttons-bg: rgb(110, 110, 0);

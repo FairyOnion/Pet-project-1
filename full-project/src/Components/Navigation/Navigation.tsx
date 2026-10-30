@@ -11,9 +11,9 @@ export default function MainNavbar () {
 
     const themes: string[] = ['Dark', 'Light', 'Winter', 'Spring', 'Summer', 'Autumn'];
     const navigationLinks: NavigationLink[] = [
-      {name: 'Home', link: '#test-zone'},
-      {name: 'Second Row', link: '#weather-container'},
-      {name: 'Third Row', link: '#lorem-zone'},
+      {name: 'Home', link: '#weather-container'},
+      {name: 'Second Row', link: '#test-zone'},
+      {name: 'Third Row', link: '#event-zone'},
       {name: 'Fourth Row', link: '#lorem-zone'}
     ]
     const [currentTheme, setCurrentTheme] = useState('Dark');

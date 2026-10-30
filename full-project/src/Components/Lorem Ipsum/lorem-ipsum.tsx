@@ -9,7 +9,7 @@ export default function LoremIpsum () {
     }
 
     return (
-        <div id='lorem-zone'>
+        <div id='lorem-zone' className='grid-tile-fourth-row'>
             <h2>Lorem Ipsum Zone</h2>
             <button id='collapse-lorem' onClick={handleTextCollapse}>{isTextHidden ? 'Reveal Text' : 'Collapse Text'}</button>
             {!isTextHidden &&

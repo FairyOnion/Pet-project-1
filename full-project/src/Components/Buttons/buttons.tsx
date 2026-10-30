@@ -30,7 +30,7 @@ export default function ButtonsSet () {
     }
 
     return (
-        <div id='buttons-zone'>
+        <div id='buttons-zone' className="grid-tile-second-row">
           <h2>Buttons Zone</h2>
           <p>Set of buttons using UseState</p>
           <p>Buttons have been clicked <u>{btnCount}</u> times.</p>
