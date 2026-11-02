@@ -58,3 +58,7 @@
     padding: 10px;
     text-align: center;
 }
+
+.grid-tile-first-row, .grid-tile-second-row, .grid-tile-third-row, .grid-tile-fourth-row{
+    background-color: var(--bg-secondary);
+}
