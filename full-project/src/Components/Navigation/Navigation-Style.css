@@ -19,6 +19,30 @@
     background-color: var(--nav-buttons-active)
 }
 
+@media screen and (max-width: 768px) {
+
+    #main-nav {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 0px;
+        width: 100%;
+    }
+
+    .nav-button {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+    }
+
+    #navigation-ul, #themes-ul {
+        width: 80vw !important;
+        left: 8vw !important;
+        top: 12vh;
+        border: 1px solid var(--border-extra);
+    }
+}
+
 #main-nav {
     position: sticky;
     left: 0;

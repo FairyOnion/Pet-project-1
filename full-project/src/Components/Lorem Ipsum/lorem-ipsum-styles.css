@@ -7,8 +7,8 @@
 }
 
 #collapse-lorem {
-    width: 15%;
-    height: 5vh;
+    min-width: 15%;
+    min-height: 5vh;
     margin: 1vh auto;
     color: var(--buttons-text);
     background-color: var(--buttons-bg);

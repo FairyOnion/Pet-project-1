@@ -7,7 +7,6 @@ type ButtonValues = {
 
 export function Button({name, sec}: ButtonValues) {
       function handleClick () {
-        console.log('Button from the small components file has been clicked');
         setTimeout(() => {
           alert(`You clicked the button "${name}" 3 seconds ago!`)
         }, 3000)

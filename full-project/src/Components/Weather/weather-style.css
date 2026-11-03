@@ -13,12 +13,16 @@
     justify-content: space-around;
     align-items: center;
     flex-grow: 1;
-    width: 100%
+    width: 100%;
+    gap: 1vh;
 }
 
 #weather-image {
     aspect-ratio: 1 / 1;
-    width: 35%
+    width: 35%;
+    border: 2px solid var(--border-extra);
+    padding: 10px;
+    background-color: var(--bg-extra);
 }
 
 #t-h-container {

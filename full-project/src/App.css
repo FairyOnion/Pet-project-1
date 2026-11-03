@@ -62,3 +62,22 @@
 .grid-tile-first-row, .grid-tile-second-row, .grid-tile-third-row, .grid-tile-fourth-row{
     background-color: var(--bg-secondary);
 }
+
+@media screen and (max-width: 768px){
+    #main-area {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+
+    .grid-tile-first-row, .grid-tile-second-row, .grid-tile-third-row, .grid-tile-fourth-row{
+        width: 90%;
+        border: 2px solid var(--border-main);
+        margin: 7px;
+        padding: 5px;
+        text-align: center;
+    }
+}

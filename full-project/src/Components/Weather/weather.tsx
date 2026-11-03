@@ -38,7 +38,7 @@ export default function WeatherApp () {
                 <div id='weather-result-container'>
                     <h3>{weather.location.name}</h3>
                     <p>{weather.current.condition.text}</p>
-                    <img src={weather.current.condition.icon} id='weather-image' alt='weather-condition-image'/>
+                    <img src={weather.current.condition.icon} loading='lazy' id='weather-image' alt='weather-condition-image'/>
                     <div id='t-h-container'>
                         <div className='weather-num-container'>
                             <p>Temperature:</p>

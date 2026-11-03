@@ -1,8 +1,9 @@
 import { Button, Gav, ThickDivider, ThinDivider}  from './Components/Small-Components/Small-Components.tsx'
 import MainNavbar from './Components/Navigation/Navigation.tsx'
-import ButtonsSet from './Components/Buttons/buttons.tsx'
 import WeatherApp from './Components/Weather/weather.tsx'
 import TimeCurrent from './Components/Time/time.tsx'
+import RandomNumGenerator from './Components/Random Number/random-number.tsx'
+import ButtonsSet from './Components/Buttons/buttons.tsx'
 import EventOrder from './Components/Event Order/event-order.tsx'
 import LoremIpsum from './Components/Lorem Ipsum/lorem-ipsum.tsx'
 import './App.css'
@@ -15,10 +16,7 @@ function App() {
       <div id='main-area'>
         <WeatherApp />
         <TimeCurrent />
-        <div id='random-num-zone' className='grid-tile-first-row'>
-          <h2>Random Number Generator</h2>
-          <p>A random number will be generated here</p>
-        </div>
+        <RandomNumGenerator />
         <div id='test-zone' className="grid-tile-second-row">
           <h2>Test Zone</h2>
           <ThickDivider />
