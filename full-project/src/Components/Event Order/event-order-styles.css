@@ -47,7 +47,7 @@
 }
 
 .code-span {
-    color: var(-tertiary);
+    color: var(--tertiary);
     text-decoration: underline;
 }
 
