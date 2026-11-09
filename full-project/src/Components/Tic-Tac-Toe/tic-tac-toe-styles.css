@@ -1,0 +1,52 @@
+@import url('/src/index.css');
+
+#game-container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.board-row {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+.square {
+    aspect-ratio: 1/1;
+    width: 100px;
+    color: var(--tertiary);
+    background-color: var(--bg-extra);
+    border: 1px solid var(--border-extra);
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .square {
+        width: 75px;
+    }
+}
+
+#game-results {
+    margin-top: 3vh;
+}
+
+#play-again-btn {
+    margin: 3vh auto;
+    min-width: 10vw;
+    max-width: 80vw;
+    padding: 10px;
+    color: var(--buttons-text);
+    background-color: var(--buttons-bg);
+    border: 2px solid var(--border-extra);
+    border-radius: 15px;
+}
+
+#play-again-btn:hover {
+    background-color: var(--buttons-bg-hover);
+}

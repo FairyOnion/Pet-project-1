@@ -5,6 +5,7 @@ import TimeCurrent from './Components/Time/time.tsx'
 import RandomNumGenerator from './Components/Random Number/random-number.tsx'
 import ButtonsSet from './Components/Buttons/buttons.tsx'
 import EventOrder from './Components/Event Order/event-order.tsx'
+import TicTacToe from './Components/Tic-Tac-Toe/tic-tac-toe.tsx'
 import LoremIpsum from './Components/Lorem Ipsum/lorem-ipsum.tsx'
 import './App.css'
 
@@ -28,9 +29,7 @@ function App() {
         </div>
         <ButtonsSet />
         <EventOrder />
-        <div id='unknown-zone' className='grid-tile-third-row'>
-          <h2>Empty for now</h2>
-        </div>
+        <TicTacToe />
         <LoremIpsum />
       </div>
     </main>

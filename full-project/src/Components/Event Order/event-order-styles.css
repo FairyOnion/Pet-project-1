@@ -5,7 +5,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    gap: 2vh;
+    gap: 3vh;
 }
 
 #event-order-header {
