@@ -26,7 +26,7 @@ export default function RandomNumGenerator () {
             </label>
           </div>
           <button id='generate-num-btn' onClick={handleGeneration}>Generate</button>
-          <h4 id='output'>{generatedNum ? generatedNum : "Output will be here"}</h4>
+          <h3 id='output'>{generatedNum ? generatedNum : "Output will be here"}</h3>
         </div>
     )
 }

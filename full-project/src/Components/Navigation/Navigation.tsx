@@ -26,8 +26,16 @@ export default function MainNavbar () {
       {name: 'Test Zone', link: '#test-zone'},
       {name: 'Buttons', link: '#buttons-zone'},
       {name: 'Events', link: '#event-zone'},
-      {name: 'In Development.1', link: '#unknown-zone'},
+      {name: 'Tic-tac-toe', link: '#tic-tac-toe-zone'},
       {name: 'Lorem Ipsum', link: '#lorem-zone'},
+    ])
+      } else if (window.innerWidth > 768 && window.innerWidth <= 1024){
+        setNavigationLinks([
+      {name: 'Home', link: '#weather-container'},
+      {name: 'Second Row', link: '#random-num-zone'},
+      {name: 'Third Row', link: '#buttons-zone'},
+      {name: 'Tic-tac-toe', link: '#tic-tac-toe-zone'},
+      {name: 'Lorem Ipsum', link: '#lorem-zone'}
     ])
       } else {
         setNavigationLinks([

@@ -7,7 +7,6 @@
     align-items: center;
 }
 
-
 #main-area {
     padding: 10px;
     display: grid;
@@ -31,37 +30,35 @@
 #tic-tac-toe-zone {grid-area: tic-tac-toe}
 #lorem-zone {grid-area: lorem;}
 
-.grid-tile-first-row {
-    border: 4px solid var(--border-main);
-    margin: 4vh 1vw;
-    padding: 10px;
-    width: 30vw;
-    text-align: center;
-}
-
-.grid-tile-second-row {
-    border: 4px solid var(--border-main);
-    margin: 14px;
-    padding: 10px;
-    text-align: center;
-}
-
-.grid-tile-third-row {
-    border: 4px solid var(--border-main);
-    margin: 14px;
-    padding: 10px;
-    text-align: center;
-}
-
-.grid-tile-fourth-row {
-    border: 4px solid var(--border-main);
-    margin: 14px;
-    padding: 10px;
-    text-align: center;
-}
-
 .grid-tile-first-row, .grid-tile-second-row, .grid-tile-third-row, .grid-tile-fourth-row{
     background-color: var(--bg-secondary);
+    border: 4px solid var(--border-main);
+    margin: 14px;
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (768px < width < 1024px){
+    #main-area {
+        padding: 7px;
+        grid-template-areas:
+        'weather time'
+        'random-num test'
+        'buttons event'
+        'tic-tac-toe tic-tac-toe'
+        'lorem lorem'
+        ;
+        gap: 10px;
+    }
+
+    #weather-container {grid-area: weather;}
+    #time-zone {grid-area: time;}
+    #random-num-zone {grid-area: random-num;}
+    #test-zone {grid-area: test;}
+    #buttons-zone {grid-area: buttons;}
+    #event-zone {grid-area: event;}
+    #tic-tac-toe-zone {grid-area: tic-tac-toe}
+    s#lorem-zone {grid-area: lorem;} 
 }
 
 @media screen and (max-width: 768px){
@@ -75,7 +72,7 @@
     }
 
     .grid-tile-first-row, .grid-tile-second-row, .grid-tile-third-row, .grid-tile-fourth-row{
-        width: 90%;
+        width: 95%;
         border: 2px solid var(--border-main);
         margin: 7px;
         padding: 5px;

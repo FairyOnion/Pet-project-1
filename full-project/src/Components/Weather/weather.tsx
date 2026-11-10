@@ -27,7 +27,7 @@ export default function WeatherApp () {
 
     return (
         <div id='weather-container' className='grid-tile-first-row'>
-            <h1>Weather Forecast</h1>
+            <h2>Weather Forecast</h2>
             {isLoading && (
                 <h3>Loading Weather...</h3>
             )}

@@ -19,11 +19,17 @@
 
 .square {
     aspect-ratio: 1/1;
-    width: 100px;
+    width: 125px;
     color: var(--tertiary);
     background-color: var(--bg-extra);
     border: 1px solid var(--border-extra);
     font-size: 2rem;
+}
+
+@media screen and (768px < width < 1024px) {
+    .square {
+        width: 100px;
+    }
 }
 
 @media screen and (max-width: 768px) {

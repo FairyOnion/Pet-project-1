@@ -26,9 +26,9 @@ export default function TicTacToe () {
         setXIsNext(!xIsNext);
     }
 
-    function Square({ value, onSquareClick } : {value: string, onSquareClick: any}) {
+    function Square({ value, onSquareClick, ariaLabel } : {value: string, onSquareClick: any, ariaLabel: string}) {
         return (
-            <button className="square" onClick={onSquareClick}>
+            <button className="square" onClick={onSquareClick} aria-label={ariaLabel}>
             {value}
             </button>
         );
@@ -45,7 +45,6 @@ export default function TicTacToe () {
         }
 
     function handleGameRestart () {
-        console.log('The game has restarted');
         setSquares(Array(9).fill(null));
         setXIsNext(true);
     }
@@ -55,19 +54,19 @@ export default function TicTacToe () {
             <h2>Tic-Tac-Toe</h2>
             <div id='game-container'>
                 <div className='board-row'>
-                    <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
-                    <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
-                    <Square value={squares[2]} onSquareClick={() => handleClick(2)} />
+                    <Square value={squares[0]} onSquareClick={() => handleClick(0)} ariaLabel='Row 1, Column 1'/>
+                    <Square value={squares[1]} onSquareClick={() => handleClick(1)} ariaLabel='Row 1, Column 2'/>
+                    <Square value={squares[2]} onSquareClick={() => handleClick(2)} ariaLabel='Row 1, Column 3'/>
                 </div>
                 <div className='board-row'>
-                    <Square value={squares[3]} onSquareClick={() => handleClick(3)} />
-                    <Square value={squares[4]} onSquareClick={() => handleClick(4)} />
-                    <Square value={squares[5]} onSquareClick={() => handleClick(5)} />
+                    <Square value={squares[3]} onSquareClick={() => handleClick(3)} ariaLabel='Row 2, Column 1'/>
+                    <Square value={squares[4]} onSquareClick={() => handleClick(4)} ariaLabel='Row 2, Column 2'/>
+                    <Square value={squares[5]} onSquareClick={() => handleClick(5)} ariaLabel='Row 2, Column 3'/>
                 </div>
                 <div className='board-row'>
-                    <Square value={squares[6]} onSquareClick={() => handleClick(6)} />
-                    <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
-                    <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
+                    <Square value={squares[6]} onSquareClick={() => handleClick(6)} ariaLabel='Row 3, Column 1'/>
+                    <Square value={squares[7]} onSquareClick={() => handleClick(7)} ariaLabel='Row 3, Column 2'/>
+                    <Square value={squares[8]} onSquareClick={() => handleClick(8)} ariaLabel='Row 3, Column 3'/>
                 </div>
                 <p id='game-results'>{status}</p>
                 <button id='play-again-btn' onClick={handleGameRestart}>Play Again</button>

@@ -44,7 +44,7 @@
     padding: 15px;
     border-radius: 15px;
     width: 90%;
-    color: #2e2e2e;
+    color: #111;
     font-size: 16px;
     transform: scale(0.95);
     transition: all 0.2s ease-in-out;
@@ -56,8 +56,8 @@
 }
 
 #red-btn {
-    background-color: #b33;
-    border: 3px solid #f11;
+    background-color: #e33;
+    border: 3px solid #f88;
 }
 
 #green-btn {
@@ -66,11 +66,11 @@
 }
 
 #blue-btn {
-    background-color: #66f;
-    border: 3px solid #44f;
+    background-color: #77f;
+    border: 3px solid #33f;
 }
 
 #purple-btn {
-    background-color: #93d;
-    border: 3px solid #b1f;
+    background-color: #b5d;
+    border: 3px solid #a1f;
 }

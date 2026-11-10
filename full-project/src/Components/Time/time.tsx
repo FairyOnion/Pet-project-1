@@ -45,9 +45,7 @@ export default function TimeCurrent() {
           <h2 id='time-zone-header'>Time zone</h2>
           <h3 id='local-time-header'>Local time:</h3>
           <div id='clock-container'>
-            <span className='time-span'>{hours < 10 ? '0' : ''}{hours}</span>
-            <span className='time-span'> : </span>
-            <span className='time-span'>{minutes < 10 ? '0' : ''}{minutes}</span>
+            <span className='time-span'>{hours < 10 ? '0' : ''}{hours} : {minutes < 10 ? '0' : ''}{minutes}</span>
           </div>
           <p style={{fontSize: '2rem'}}>{weekday}</p>
           <p style={{fontSize: '1.75rem'}}>{day} / {month} / {year}</p>
